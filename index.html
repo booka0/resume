@@ -6,72 +6,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="dmitry, cv, resume">
     <meta name="description" content="Это сайт - резюме Дмитрия">
+    <link rel="stylesheet" href="style.css">
     <title>Dmitry Resume</title>
 </head>
 <body>
-    <img src="man.jpg " width="350"  alt="man" >
-    <h1>Дмитрий</h1>
-    <p>Человек <strong> очень </strong> важный</p>
-    <p><em>Это всё</em></p>
-    <h4>Список социальных сетей:</h4>
-    <a href="https://www.instagram.com/mtbrussia/" target="_blank">Instagram</a>
-    |
-    <a href="https://www.youtube.com/@mantrucksandbuses" target="_blank">Youtube</a>
-    |
-    <a href="https://www.facebook.com/mantruckandbus" target="_blank">Facebook</a>
-    
-    <h2>Мои хобби</h2>
-    
-    <ol>
-        <li>Путешествия</li>
-        <li>Блоггинг</li>
-        <li>Горные лыжи</li>
-        <li>ММА</li>
-    </ol>
-    
-    <h2>Опыт работы</h2>
-    <table>
-        <thead>        
-            <tr>
-                <th>Название</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>LPTracker</td>
-                <td>Frontend</td>
-                <td>2015-2016</td>
-            </tr>
-            <tr>
-                <td>EPAM</td>
-                <td>Software Engineer</td>
-                <td>2016-2017</td>
-            </tr>
-            <tr>
-                <td>Software Outsourcing Services</td>
-                <td>Senior Fronted</td>
-                <td>2017-2019</td>
-            </tr>
-        </tbody>
-    </table>
-    <h2>Связаться со мной</h2>
-    <form >
-        <div>
-            <label for="name" >Ваше имя:</label>
-            <input type="text" id="name" placeholder="Введите имя">
+    <div class="container">
+        <div class="navbar">
+            <ul>
+                <li><a href="#">item 1</a></li>
+                <li><a href="#">item 2</a></li>
+                <li><a href="#">item 3</a></li>
+                <li><a href="#">item 4</a></li>
+                <li><a href="#">item 5</a></li>
+            </ul>
         </div>
-        <div>
-            <label for="email">Ваш Email:</label>
-            <input type="email" id="email" placeholder="Введите Email">
+        <div class="info">
+            <img src="man.jpg " alt="man" class="avatar">
+            <div class="info-text">
+                <h1>Дмитрий</h1>
+                <p>Основатель онлайн школы по программированию</p>
+                <p><em>Любит путешествовать и программировать</em></p>
+                <h4>Список социальных сетей:</h4>
+                <a href="https://www.instagram.com/mtbrussia/" target="_blank">Instagram</a>
+                |
+                <a href="https://www.youtube.com/@mantrucksandbuses" target="_blank">Youtube</a>
+                |
+                <a href="https://www.facebook.com/mantruckandbus" target="_blank">Facebook</a>
+            </div>
+        </div> 
+        <div class="card bg-yellov">
+            <h2>Мои хобби</h2>
+            <ol class="list">
+                <li>Путешествия</li>
+                <li>Блоггинг</li>
+                <li>Горные лыжи</li>
+                <li>ММА</li>
+            </ol>
         </div>
-        <div>
-            <label for="message">Ваше сообщение:</label>
-            <br>
-            <textarea id="message" cols="25" rows="5" placeholder="Введите ссобщение..."></textarea>
+        <div class="card bg-green">
+            <h2>Опыт работы</h2>
+            <table class="table">
+                <thead>        
+<!--
+                    <tr>
+                        <th>Название</th>
+                        <th>Должность</th>
+                        <th>Год</th>
+                    </tr>
+-->
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>LPTracker</td>
+                        <td>Frontend</td>
+                        <td>2015-2016</td>
+                    </tr>
+                    <tr>
+                        <td>EPAM</td>
+                        <td>Software Engineer</td>
+                        <td>2016-2017</td>
+                    </tr>
+                    <tr>
+                        <td>Software Outsourcing Services</td>
+                        <td>Senior Fronted</td>
+                        <td>2017-2019</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        <input type="submit" value="Отправить!">
-    </form>
+            <div class="card bg-red" >
+             <h2>Мои курсы</h2>
+                <ul class="link-list">
+                    <li><a href="#">Получение профессии</a></li>
+                    <li><a href="#">Все курсы</a></li>
+                </ul>
+            </div>
+            <form action="/" class="form">
+                <h2>Связаться со мной</h2>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name" >Ваше имя:</label>
+                        <input type="text" id="name" placeholder="Введите имя">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Ваш Email:</label>
+                        <input type="email" id="email" placeholder="Введите Email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Ваше сообщение:</label>
+                    <textarea id="message" cols="25" rows="5" placeholder="Введите сообщение..."></textarea>
+                </div>
+                <a href="#" class="btn">Отправить!</a>
+            </form>
+        </div>
 </body>
 </html>
